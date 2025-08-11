@@ -57,7 +57,7 @@ function App() {
             <AnimatedDiv key={item.id} className=''>
               <div className='flex flex-col gap-6 justify-start'>
                 <h3 className='font-semibold text-lg md:text-xl'>{item.title}</h3>
-                <img src={item.img} className='w-full max-w-128 rounded-[5px]'></img>
+                <img src={item.img} className={`w-full max-w-128 rounded-[5px] ${item.id === 5 ? "relative right-3" : ""} `}></img>
               </div>
               <span className='text-sm md:text-base'>{item.text}</span>
             </AnimatedDiv>
